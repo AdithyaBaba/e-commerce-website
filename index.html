@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>My E-commerce Store</h1>
+    <button id="cart-button">Cart (<span id="cart-count">0</span>)</button>
+</header>
+
+<main>
+    <div class="products">
+        <div class="product">
+            <h2>AirMax Sneakers</h2>
+            <p>$50.00</p>
+            <button class="add-to-cart" data-product="AirMax Sneakers" data-price="50">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Beats Headphones</h2>
+            <p>$120.00</p>
+            <button class="add-to-cart" data-product="Beats Headphones" data-price="120">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Rolex Watch</h2>
+            <p>$250.00</p>
+            <button class="add-to-cart" data-product="Rolex Watch" data-price="250">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Leather Backpack</h2>
+            <p>$75.00</p>
+            <button class="add-to-cart" data-product="Leather Backpack" data-price="75">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Fitness Tracker</h2>
+            <p>$90.00</p>
+            <button class="add-to-cart" data-product="Fitness Tracker" data-price="90">Add to Cart</button>
+        </div>
+    </div>
+
+    <div id="cart" class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+
+</html>
